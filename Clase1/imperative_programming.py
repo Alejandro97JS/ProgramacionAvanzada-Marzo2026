@@ -20,7 +20,7 @@ products = [
 ]
 
 # Inventory management
-inventory = {product["sku"]: product for product in products}
+inventory = {product["sku"]: product for product in products} # Comprehensions
 
 # Incoming orders:
 orders = [
