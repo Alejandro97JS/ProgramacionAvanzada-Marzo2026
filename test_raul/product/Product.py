@@ -25,6 +25,12 @@ class Product:
 
     def get_sku(self) -> str:
         return self.__sku
+    
+    def get_current_stock(self) -> int:
+        return self.__current_stock
+
+    def get_price(self) -> int:
+        return self.__price
                
     def __repr__(self) -> str:
         return f"""- Name: {self.__name} 
