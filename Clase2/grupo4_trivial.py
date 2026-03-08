@@ -70,11 +70,12 @@ class TriviaClient:
 
 # INTERESTING: Aquí ya ejecuto el código a modo "script", es decir, instancio
 # la clase y uso sus métodos según lo que quiera hacer:
-trivia_client = TriviaClient() # INTERESTING: Instanciamos la clase, creamos un objeto de tipo TriviaClient.
-# Mostrar categorías por pantalla (simplemente mostrarlas, por dentro está haciendo la llamada a la API para obtener los datos, eso sí):
-trivia_client.show_categories() # INTERESTING: Usamos el método show_categories para mostrar por pantalla las categorías disponibles.
-# Llamar al método get_questions para obtener preguntas, y luego ya podemos procesarlas como queramos (esto ya fuera de la clase):
-questions = trivia_client.get_questions(amount=3, category=9) # INTERESTING: Usamos el método get_questions para obtener 3 preguntas de la categoría 9 (General Knowledge).
-# Procesarlas ya como queramos, según el caso de uso:
-for q in questions:
-    print(f"Question: {q['question']}")
+if __name__ == "__main__":
+    trivia_client = TriviaClient() # INTERESTING: Instanciamos la clase, creamos un objeto de tipo TriviaClient.
+    # Mostrar categorías por pantalla (simplemente mostrarlas, por dentro está haciendo la llamada a la API para obtener los datos, eso sí):
+    trivia_client.show_categories() # INTERESTING: Usamos el método show_categories para mostrar por pantalla las categorías disponibles.
+    # Llamar al método get_questions para obtener preguntas, y luego ya podemos procesarlas como queramos (esto ya fuera de la clase):
+    questions = trivia_client.get_questions(amount=3, category=9) # INTERESTING: Usamos el método get_questions para obtener 3 preguntas de la categoría 9 (General Knowledge).
+    # Procesarlas ya como queramos, según el caso de uso:
+    for q in questions:
+        print(f"Question: {q['question']}")
