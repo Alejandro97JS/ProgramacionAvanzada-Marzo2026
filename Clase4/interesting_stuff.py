@@ -20,7 +20,13 @@ my_even_numbers = [2*i for i in range(100)]
 my_last_even_number = my_even_numbers[-1]
 my_last_even_number = 198 # !!!
 
-# TODO: Adjuntar extensiones VSCode útiles, unique_together, un ejemplo de relationship.
+# Extensiones VSCode que uso y me parecen útiles:
+# - Python + Pylance
+# - SQLite Viewer (para ver el contenido de las bases de datos SQLite)
+# - vscode-pdf (para ver PDFs directamente en VSCode)
+# - Excalidraw (para hacer diagramas de forma rápida)
+# - Todo Tree (para organizar tareas y pendientes)
+# - Markdown PDF (para convertir archivos Markdown a PDF)
 
 # Igual que SQLAlchemy te ayuda a mapear a DB...
 # ¿Existe alguna opción para que desde un dataframe de Pandas
